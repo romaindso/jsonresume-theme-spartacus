@@ -15,7 +15,7 @@ a,span {
 
 .email,.site,.github,.phone-number,.address {
   margin-bottom: .4em;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 ul {
@@ -65,7 +65,7 @@ section.card {
 }
 
 .skills p {
-  font-size: .9em;
+  font-size: 1em;
 }
 
 #name {
@@ -165,13 +165,13 @@ section.card {
 
 .languages {
   font-family: Roboto,Arial,sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   font-weight: 300;
 }
 
 .list {
   list-style-type: none;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 .location {
@@ -193,7 +193,7 @@ section.card {
 
 ul.list {
   list-style-type: circle;
-  padding-left: 1rem;
+  padding-left: 1.1rem;
 }
 
 ul.list li {
@@ -221,7 +221,7 @@ ul.list li:before {
 }
 
 .education .grade {
-  font-size: .9em;
+  font-size: 1em;
 }
 
 .project-info {
@@ -247,7 +247,7 @@ ul.list li:before {
 }
 
 .interests,.subtitle {
-  font-size: .9em;
+  font-size: 1em;
   margin-bottom: .2em;
 }
 
@@ -257,14 +257,18 @@ ul.list li:before {
 }
 
 .employment .summary {
-  font-size: .9em;
+  font-size: 1em;
   margin-bottom: .4em;
 }
 
 #awards .summary {
-  font-size: .9em;
+  font-size: 1em;
 }
 
 #summary {
+  font-size: 1em;
+}
+
+.contact .site {
   font-size: .9em;
 }
