@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Debbie-Ann Facey</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
+  <style>
+    body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
+}
+
+p {
+  display: inline;
+}
+
+a,span {
+  color: #4c92c1;
+  text-decoration: none;
+}
+
+.email,.site,.github,.phone-number,.address {
+  margin-bottom: .4em;
+  font-size: .9em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  /*background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;*/
+  margin-bottom: 15px;
+}
+
+.header.card {
+  margin-top: 15px;
+  margin-right: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px 0 20px;
+  border-bottom: 1px dashed #CFCFCF;
+}
+
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.header {
+  overflow: auto;
+  margin-left: 6px;
+  margin-right: 12px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: .9em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #555;
+  float: left;
+  margin: .1em .1em .2em;
+}
+
+#resume-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.left-content {
+  float: left;
+  width: 32%;
+  margin-left: 6px;
+}
+
+.left-content .section-header {
+  font-weight: 400;
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.left-content .section-content {
+  font-weight: 300;
+}
+
+.left-content .title {
+  font-weight: 400;
+  margin-bottom: .5em;
+  color: #4c92c1;
+}
+
+.left-content .card {
+  border-bottom: 1px dashed #CFCFCF;
+}
+
+.right-content {
+  width: 64%;
+  margin-right: 15px;
+  float: right;
+}
+
+.right-content .section-header {
+  /*color: #000;*/
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.right-content {
+  border-left: 1px dashed #CFCFCF;
+}
+
+.section-content {
+  overflow: auto;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #3c82b1;
+  margin-top: .2em;
+  margin-bottom: .3em;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.languages {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.list {
+  list-style-type: none;
+  font-size: .9em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  clear: both;
+}
+
+.right {
+  float: right;
+  width: 55%;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
+  display: inline-block;
+  width: 0;
+  margin-left: 0;
+}
+
+.project,.employment,.education,.skills {
+  margin-bottom: .8em;
+}
+
+.education-info .title {
+  margin-bottom: .2em;
+  line-height: 130%;
+}
+
+.education.last {
+  margin-bottom: .8em !important;
+}
+
+.education .grade {
+  font-size: .9em;
+}
+
+.project-info {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.last {
+  margin-bottom: 0!important;
+}
+
+.term {
+  font-size: 1.75em;
+  font-weight: 200;
+  color: #000;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: .9em;
+  margin-bottom: .2em;
+}
+
+.project .title,.employment .title {
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.employment .summary {
+  font-size: .9em;
+  margin-bottom: .4em;
+}
+
+#awards .summary {
+  font-size: .9em;
+}
+
+#summary {
+  font-size: .9em;
+}
+  </style>
+</head>
+
+<body>
+  <div id='resume-container'>
+    <div class='header card'>
+      <h1 id='name'>
+          Debbie-Ann Facey
+        </h1>
+      <span class='term'>Full Stack Software Engineer</span>
+    </div>
+    <div class='left-content'>
+      <section class='card'>
+        <div class='section-header'>Contact</div>
+        <div class='section-content' id='contact'>
+          <div class='contact'>
+            <div class='address'>
+              Stony Hill, Kingston, Jamaica
+            </div>
+            <div class='email'>
+              <a href='mailto:debbie.facey@gmail.com'>debbie.facey@gmail.com</a>
+            </div>
+              
+            <div class='site'>
+              <a href='http://jm.linkedin.com/in/debbiefacey/'>http://jm.linkedin.com/in/debbiefacey/</a>
+            </div>
+              
+            <div class='phone-number last'>
+              <a href="tel:(876) 836-8040">(876) 836-8040</a>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Technical Skills</div>
+        <div class='section-content' id='technical-skills'>
+          <div id='skills-container'>
+            <div class='skills'>
+              <div class='skill'>Advanced</div>
+                
+              <p>
+                 C#,  ASP.NET MVC,  ASP.NET Webforms,  UML,  JavaScript,  CSS,  Less,  Sass,  Entity Framework,  SQL,  SQL Server,  Unit Testing,  Team Leadership,  Project Lifecycle Management,  Object Oriented Programming,  Design Patterns, 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Intermediate</div>
+                
+              <p>
+                 React,  Redux,  Git,  Subversion,  TFS, 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Beginner</div>
+                
+              <p>
+                 Angular2,  Nodejs,  Meteorjs,  Akka.NET, 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Education</div>
+        <div class='section-content' id='education'>
+          <div class='education last'>
+            <div class='education-info'>
+              <div class='title'>
+                Master of Science (M.Sc.) of Computer Science
+                <br>at  University of the West Indies 
+              </div>
+              <div class='duration'>
+                 Sep 2011   - Mar 2013 
+              </div>
+            </div>
+            <div class='grade'>Grade: Distinction</div>
+          </div>
+          <div class='education last'>
+            <div class='education-info'>
+              <div class='title'>
+                Bachelor of Science (B.Sc.) of Computer Science
+                <br>at  University of the West Indies 
+              </div>
+              <div class='duration'>
+                 Sep 1997   - May 2001 
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Awards</div>
+        <div class='section-content' id='awards'>
+          <div class='awards last'>
+            <div class='awards-info'>
+              <div class='title'>
+                M.Sc. Distinction Award <br/>University of the West Indies
+              </div>
+              <div class='summary'>
+                In recognition of the achievement of a M.Sc. Degree with distinction in Computer Science
+              </div>
+              <div class='duration'>
+                 Apr 2014 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class='right-content'>
+      <section class='card'>
+        <div class='section-header'>Summary</div>
+        <div class='section-content' id='summary'>
+          Full stack .NET software engineer. Excellent hands on development experience. Ability to handle the entire software development Lifecycle. Strong analytical and problem-solving skills. Excellent written, good verbal skills. Passion for programming and learning new technologies
+        </div>
+      </section>
+      <section class='card'>
+        <div class='section-header'>Employment</div>
+        <div class='section-content' id='employment'>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		Development Consortium International Ltd.
+                  	</a>   Software Architect/Team Lead 
+              </div>
+              <div class='duration'>
+                 Mar 2012   - Present 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Responsible for software architecture and development, technical and UX design, and leading teams in developing software for various clients.
+              </div>
+               
+              <ul class="list">
+                <li>Lead a team in developing a financial portfolio management application in ASP.NET and Entity Framework. This was the main enterprise application used to manage the accounts and portfolios for all of the client&#x27;s customers</li>
+                <li>Developed proof of concept of certain key modules for a rewrite of a companies registry application, leveraging microservices and the actor model pattern, using C#, AKKA.NET and Entity Framework. Wrote scheduling, events and name reservation modules</li>
+                <li>Streamlined the development processes by implementing the use of project management tools, code reviews and centralized git source control and document store for all projects. Also created wireframes, mockups and technical documentation</li>
+                <li>Technologies used: ASP.NET, C#, SQL Server, Entity Framework, JQuery, Less, Sass, Unit Testing, Scrum, UML, Git, TFS, Subversion</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		Bartronics America
+                  	</a>   Senior Software Devloper/Consultant 
+              </div>
+              <div class='duration'>
+                 Nov 2004   - Jun 2011 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Served as senior .NET developer/consultant for various clients of Bartronics. Clients included Redcats USA, Studio LLC, Ernst &amp; Young LLP. Work experience with these clients are outlined below:
+              </div>
+                           </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		Redcats USA
+                  	</a>   Software Engineer 
+              </div>
+              <div class='duration'>
+                 Sep 2010   - Jun 2011 
+              </div>
+            </div>
+            <div class='info'>
+ 
+              <ul class="list">
+                <li>Developed an API using WCF to encapsulate a third party international shipping service. This was used to facilitate internation shipping in Redcat&#x27;s 7 ecommerce websites</li>
+                <li>Developed a front-end application, using jQuery and jQueryUI, to test and administer the API</li>
+                <li>Technologies used: C#, WCF, MS Test, JQuery, HTML, CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		Studio LLC
+                  	</a>   Senior .NET Developer 
+              </div>
+              <div class='duration'>
+                 Mar 2010   - Sep 2010 
+              </div>
+            </div>
+            <div class='info'>
+ 
+              <ul class="list">
+                <li>Involved in the development of the Employer Partnership of the Armed Forces website. The site paired employers with military service members who needed jobs.</li>
+                <li>Designed the database schema, business logic and views to support job search for candidates and candidate search for employers</li>
+                <li>Technologies used: ASP.NET MVC, C#, .NET, LINQ to SQL, Microsoft SQL Server, jQuery, AJAX, HTML, JavaScript, CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		Ernst &amp; Young LLP
+                  	</a>   Senior .NET Developer 
+              </div>
+              <div class='duration'>
+                 Mar 2005   - Feb 2010 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Served as a developer on two projects: 1. A web-based Release Management Tool (CEDRIC) to track user enhancement requests, system changes and migrations to various environments for Ernst &amp; Young’s financial applications; developed using ASP.NET Web Forms. 2. A windows-based smart-client application used for financial engagement planning (EPIC); developed using Windows Forms
+              </div>
+               
+              <ul class="list">
+                <li>Responsible for interacting with clients to gather requirements, providing development estimates, writing documentation and development guidelines, performing code reviews, providing production support and completing migrations and deployments</li>
+                <li>Worked closely with the architect and actively contributed in the design and architecture of the application including making key contributions to the design of the presentation layer (by designing an ASP.NET template component) and a developing a module to track workflow</li>
+                <li>Provided a solution for modifying the data access layer to use Microsoft Data Access Application Block, to address certain performance and memory leak problems within the data access layer in use</li>
+                <li>Provided a solution for collecting configuration data from several individuals and product teams and uploading them to the Oracle database by importing data from Excel templates</li>
+                <li>Determined the source of data corruption in the application and created a more efficient and detailed logging system to track the points of failure, using a custom Enterprise Library logging application block provider</li>
+                <li>Technologies used: ASP.NET, C#, AJAX, Windows Forms, Enterprise Library, Oracle, Visual Source Safe, Click-Once, ASP.NET Web Services, Team Foundation Server, Oracle, Access, Windows Server 2003, IIS</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		EduCentres Ltd.
+                  	</a>   Software Developer/Trainer 
+              </div>
+              <div class='duration'>
+                 Dec 2002   - Oct 2004 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Developed software solutions and provided technical training for clients
+              </div>
+               
+              <ul class="list">
+                <li>Created an ASP.NET website for WassiArt to showcase a catalog of artwork and pottery, using XML and XSLT to display different views of the catalog</li>
+                <li>Developed ASP.NET Web Developer Seminar Content and Companion CD for Microsoft Corporation including creating a setup program to install the course content and sample applications using Windows forms and Windows installer</li>
+                <li>Instructed &quot;Certificate in Web Development and Administration&quot; course at Mona Institute of Applied Sciences (MIAS) - http://mias.uwimona.edu.jm/. Courses included HTML, JavaScript, PHP and Perl</li>
+                <li>Technologies used: ASP.NET (Web Forms), C#, MS Access, XML, XSLT, JavaScript, Windows Forms, Windows Installer, IIS, PHP, Java, MySQL, JavaScript, HTML, Perl</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+                <a href=''>
+                  		University of the West Indies - Mona
+                  	</a>   Information Technologist III 
+              </div>
+              <div class='duration'>
+                 Nov 2001   - Nov 2002 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Responsible for developing JSpecView: a Java-based graphical viewer application and applet for reading and displaying JCAMP DX files (a format for storing chemical spectral data, http://jspecview.sourceforge.net/)
+              </div>
+                           </div>
+          </div>
+        </div>
+      </section>
+            </div>
+  </div>
+</body>
+
+</html>
