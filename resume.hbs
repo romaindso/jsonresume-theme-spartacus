@@ -60,7 +60,7 @@
               </div>
               {{/if}} {{#if keywords.length}}
               <p>
-                {{#each keywords}} {{.}}, {{/each}}
+                {{#each keywords}} {{.}}{{#unless @last}},{{/unless}} {{/each}}
               </p>
               {{/if}}
             </div>
