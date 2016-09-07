@@ -154,6 +154,7 @@ section.card {
   color: #3c82b1;
   margin-top: .2em;
   margin-bottom: .3em;
+  text-align: right;
 }
 
 .occupation {
