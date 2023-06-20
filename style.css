@@ -70,7 +70,7 @@ section.card {
 
 #name {
   font-family: 'Open Sans',Arial,sans-serif;
-  font-size: 3em;
+  font-size: 2.6em;
   font-weight: 400;
   color: #555;
   float: left;
@@ -78,7 +78,7 @@ section.card {
 }
 
 #resume-container {
-  width: 900px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -209,7 +209,7 @@ ul.list li:before {
 }
 
 .project,.employment,.education,.skills {
-  margin-bottom: .8em;
+  margin-bottom: 1em;
 }
 
 .education-info .title {
