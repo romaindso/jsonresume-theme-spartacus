@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-spartacus",
+  "name": "jsonresume-theme-bordeaux",
   "version": "1.0.0",
-  "description": "Spartacus theme for JSON Resume",
-  "author": "Debbie Facey",
+  "description": "Bordeaux theme for JSON Resume",
+  "author": "Romain Durand Saint Omer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dannief/jsonresume-theme-spartacus"
+    "url": "https://github.com/romaindso/jsonresume-theme-bordeaux"
   },
   "license": "MIT",
   "dependencies": {
